@@ -4,6 +4,7 @@
   "repository": "https://github.com/tableau/webdataconnector",
   "logo": "https://cdns.tblsft.com/sites/all/themes/tabwat/logo.png",
   "keywords": ["node", "express", "static"],
+  "stack": "heroku-18",
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-ruby"
