@@ -1,0 +1,7 @@
+{
+  "name": "Tableau Web Data Connector",
+  "description": "Use the Tableau Web Data Connector (WDC) to connect to web data sources from Tableau. This is the repository for the Tableau WDC SDK, which includes developer samples and a simulator to help you create your connectors",
+  "repository": "https://github.com/tableau/webdataconnector",
+  "logo": "https://cdns.tblsft.com/sites/all/themes/tabwat/logo.png",
+  "keywords": ["node", "express", "static"]
+}
