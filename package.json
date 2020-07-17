@@ -2,9 +2,12 @@
   "name": "webdataconnector",
   "version": "2.0.0",
   "description": "Connect to web data from Tableau.",
+  "engines": {
+    "node": "12.13.1"
+  },
   "scripts": {
-    "corsproxy": "export CORSPROXY_PORT=8889 || set CORSPROXY_PORT=8889 && node node_modules/corsproxy/bin/corsproxy",
-    "http-server": "node node_modules/http-server/bin/http-server -p process.env.PORT || 3000 -c-1",
+    "corsproxy": "set CORSPROXY_PORT=8889 || set CORSPROXY_PORT=8889 && node node_modules/corsproxy/bin/corsproxy",
+    "http-server": "node node_modules/http-server/bin/http-server -c-1",
     "bundle": "npm run lint && webpack --watch --config ./webpack.config.js",
     "lint": "eslint ./Simulator --ext .js --ext .jsx --cache",
     "lint:fix": "eslint ./Simulator --ext .js --ext .jsx --fix --cache",
@@ -21,7 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/tableau/webdataconnector.git"
   },
-  "author": "",
+  "author": "Tableau",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.9.1",
